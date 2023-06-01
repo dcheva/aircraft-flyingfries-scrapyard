@@ -1,0 +1,177 @@
+[VERSION]
+major =1
+minor =0
+
+[GENERAL]
+atc_type ="Flying Fries"
+atc_model ="Scrapyard Monster"
+Category = "Airplane"
+performance =""
+editable = 1
+wip_indicator = 2
+icao_type_designator =SCRPYRD
+icao_manufacturer =Flying Fries
+icao_model =Scrapyard Monster
+icao_engine_type =Piston
+icao_engine_count =1
+icao_WTC =L
+icao_generic=0
+
+[PILOT]
+pilot ="Pilot_Male_Casual"
+copilot ="Pilot_Male_Casual"
+pilot_default_animation ="Idle1_PosePropeller","","","","","","","","","","","","","","",""
+copilot_default_animation ="","","","","","","","","","","","","","","",""
+pilot_attach_node ="PILOT_0"
+copilot_attach_node ="PILOT_1"
+instructor ="Pilot_Male_Casual"
+
+[EFFECTS]
+wake =fx_wake, 0
+water =fx_spray, 0
+dirt =fx_tchdrt, 0
+concrete =fx_sparks, 0
+touchdown =fx_tchdwn_s, 1
+effect.0 =Exhaust.L#(A:GENERAL ENG COMBUSTION:1, boolean)#FX_ASOBO_M_REACTORHEAT_TBM930
+effect.1 =Exhaust.R#(A:GENERAL ENG COMBUSTION:1, boolean)#FX_ASOBO_M_REACTORHEAT_TBM930
+waterspeed=fx_spray, 0
+contrail=fx_contrail_l, 0
+startup=fx_engstrt, 1
+landrotorwash=fx_rtr_lnd, 0
+waterrotorwash=fx_rtr_wtr, 0
+vaportrail_l=fx_vaportrail_l, 0
+vaportrail_r=fx_vaportrail_r, 0
+l_wingtipvortice=fx_wingtipvortice_l, 1
+r_wingtipvortice=fx_wingtipvortice_r, 1
+fueldump=, 0
+EngineFire=fx_engfire, 0
+EngineDamage=fx_engsmoke, 0
+EngineOilLeak=fx_OilLeak, 0
+SkidPavement=fx_skidmark, 0
+SnowSkiTrack=, 0
+WheelSnowSpray=fx_WheelSnowSpray, 0
+WheelWetSpray=fx_WheelWetSpray, 0
+WetEngineWash=fx_WetEngineWash, 0
+SnowEngineWash=fx_SnowEngineWash, 0
+WaterBallastDrain=fx_WaterBallastDrain, 0
+PistonFailure=fx_PistonFailure, 1
+windshield_rain_effect_available=1
+
+[TIMELINE.FLIGHT_RUNWAY]
+Flaps = 33
+
+[LOADING]
+ImageName = LOADING_FREEFLIGHT
+Tips0 = "TT:AIRCRAFT.UI.TIPS0"
+Tips1 = "TT:AIRCRAFT.UI.TIPS1"
+Tips2 = "TT:AIRCRAFT.UI.TIPS2"
+Tips3 = "TT:AIRCRAFT.UI.TIPS3"
+Tips4 = "TT:AIRCRAFT.UI.TIPS4"
+Tips5 = "TT:AIRCRAFT.UI.TIPS5"
+Tips6 = "TT:AIRCRAFT.UI.TIPS6"
+Tips7 = "TT:AIRCRAFT.UI.TIPS7"
+Tips8 = "TT:AIRCRAFT.UI.TIPS8"
+
+[EXITS]
+number_of_exits = 0
+
+[IKCHAINS]
+right_hand_target=""
+left_hand_target=""
+left_foot_target=""
+right_foot_target=""
+
+[VR]
+yoke_anim_x = Yoke_LR
+yoke_anim_y = Yoke_DU
+yoke_node = Arm_Yoke
+
+;===================== FLTSIM =====================
+
+
+[SERVICES]
+FUELTRUCK=1
+BAGGAGE_LOADER=0
+CATERING_TRUCK=0
+BOARDING_RAMP=0
+GROUND_POWER_UNIT=0
+PUSHBACK=1
+SMALL_PUSHBACK=1
+MARSHALLER=1
+JETWAY=0
+
+[FLTSIM.0]
+Title="Scrapyard Monster Rusty Baron"
+Model=""
+Panel=""
+Sound=""
+Texture="RUSTY"
+KB_Checklists=""
+KB_Reference=""
+description="TT:AIRCRAFT.UI.DESC0"
+wip_indicator=0
+ui_manufacturer="Flying Fries"
+ui_type="Scrapyard Monster"
+ui_variation="Rusty Baron"
+ui_typerole="Single Engine Prop"
+ui_createdby="Flying Fries"
+ui_thumbnailfile=""
+ui_certified_ceiling=37000
+ui_max_range=800
+ui_autonomy=2
+ui_fuel_burn_rate=10
+atc_id="SCRPY01"
+icao_airline=""
+atc_id_enable=0
+atc_airline=""
+atc_flight_number="0001"
+atc_heavy=0
+atc_id_color="0x00000000"
+atc_id_font=""
+isAirTraffic=0
+isUserSelectable=1
+isFlyable=1
+canBeUsedByAITraffic=1
+Effects=""
+atc_parking_types="GATE,RAMP,CARGO"
+atc_parking_codes=""
+soundai = ""
+short_description = ""
+
+[FLTSIM.1]
+Title="Scrapyard Monster Enzo"
+Model=""
+Panel=""
+Sound=""
+Texture="ENZO"
+KB_Checklists=""
+KB_Reference=""
+description="TT:AIRCRAFT.UI.DESC1"
+wip_indicator=0
+ui_manufacturer="Flying Fries"
+ui_type="Scrapyard Monster"
+ui_variation="Enzo"
+ui_typerole="Single Engine Prop"
+ui_createdby="Flying Fries"
+ui_thumbnailfile=""
+ui_certified_ceiling=37000
+ui_max_range=800
+ui_autonomy=2
+ui_fuel_burn_rate=10
+atc_id="SCRPY02"
+icao_airline=""
+atc_id_enable=0
+atc_airline=""
+atc_flight_number="0002"
+atc_heavy=0
+atc_id_color="0x00000000"
+atc_id_font=""
+isAirTraffic=0
+isUserSelectable=1
+isFlyable=1
+canBeUsedByAITraffic=1
+Effects=""
+atc_parking_types="GATE,RAMP,CARGO"
+atc_parking_codes=""
+soundai = ""
+short_description = ""
